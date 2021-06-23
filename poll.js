@@ -1,6 +1,6 @@
 //usage : !poll Language Js Python C# 3000
 async function poll(message) {
-    let lao = message.channel.permissionsFor("Your bot's id").has("ADD_REACTIONS", false);
+    let lao = message.channel.permissionsFor("Your bot's id").has("ADD_REACTIONS", false); // dont forget to add your bot's id here!
     if (lao == false) {
       return message.channel.send("I can't add reactions! Missing permissions! Check permission and try again").catch((error) => {
         return;
